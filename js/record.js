@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let recorder = null;
     let blob = null;
 
-    btn_comenzar.addEventListener('click', () => {
+    btn_comenzar.addEventListener('click', async() => {
       capturar.style.display = 'block'
       container_crear.style.display = 'none'
       input_my_guifos.style.display = 'none'

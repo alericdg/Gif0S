@@ -146,7 +146,7 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 1000;
 }
 
-.vermas1: hover, .vermas2: hover, .vermas3: hover, .vermas4: hover {
+.vermas1:hover, .vermas2:hover, .vermas3:hover, .vermas4:hover {
   background: #2629CC;
 }
 
@@ -191,6 +191,8 @@ h1,h2,h3,h4,h5,h6 {
   -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
   box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
   box-sizing: border-box;
+}
+
   .result-gif img:hover ~ figcaption {
     width: 97.5%;
     height: 22px;
@@ -341,13 +343,13 @@ top: 68px;
   color: #110038;
 }
 
-.day .button-new: hover {
+.day .button-new:hover {
   color: #110038;
   text-decoration: none;
   background: #E6BBE2;
 }
 
-.day .button-new: hover span {
+.day .button-new:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -369,7 +371,7 @@ top: 68px;
   top: 68px;
 }
 
-.day .button--elegir: hover {
+.day .button--elegir:hover {
   background: #E6BBE2;
 }
 
@@ -387,11 +389,11 @@ top: 68px;
   top: 68px;
 }
 
-.day .desplegable: hover {
+.day .desplegable:hover {
   background: #E6BBE2;
 }
 
-.day .elegir-desplegable: hover span {
+.day .elegir-desplegable:hover span {
   border: 1px dotted #110038;
   width: 32px;
   height: 32px;
@@ -407,8 +409,8 @@ top: 68px;
   top: 104px;
 }
 
-.day .menu-desplegable li: hover {
-  background: #FFF4FD;
+ .day .menu-desplegable li:hover {
+  background: #F7C9F3;
   border: 1px solid #CCA6C9;
   -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
@@ -427,7 +429,7 @@ top: 68px;
   color: #110038;
 }
 
-.day #mis: hover {
+.day #mis:hover {
   border: 1px dotted #110038;
   width: 95px;
   height: 32px;
@@ -447,7 +449,7 @@ top: 68px;
   color: #B4B4B4;
 }
 
-.day .container #rectangle-search: hover {
+.day .container #rectangle-search:hover {
   color: #110038;
   background: #F7C9F3;
   border: 1px solid #110038;
@@ -538,17 +540,20 @@ top: 68px;
   position: relative;
 }
 
-.day .gifs .sugeridos .cruz: hover {
+.day .gifs .sugeridos .cruz:hover {
   cursor: pointer;
 }
 
 .day .gifs .sugeridos .barra {
   height: 24px;
   width: 280px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
   margin-left: 4px;
   margin-top: 3px;
+}
+
+.barra{
+  background: -webkit-gradient(linear, left top, right top, from(#4180F6), to(#F7C9F3));
+  background: linear-gradient(left, #4180F6 0%, #F7C9F3 100%);
 }
 
 .day .gifs .sugeridos .barra p {
@@ -650,11 +655,11 @@ top: 68px;
   line-height: 18px;
 }
 
-.day .container_crear .btn_comenzar: hover {
+.day .container_crear .btn_comenzar:hover {
   background-color: #E6BBE2;
 }
 
-.day .container_crear .btn_comenzar: hover span {
+.day .container_crear .btn_comenzar:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -682,11 +687,11 @@ top: 68px;
   color: #110038;
 }
 
-.day .container_crear .btn_cancelar: hover {
+.day .container_crear .btn_cancelar:hover {
   background: #F0E5EE;
 }
 
-.lidayght .container_crear .btn_cancelar: hover span {
+.lidayght .container_crear .btn_cancelar:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -795,11 +800,11 @@ top: 68px;
           box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_capturar: hover {
+.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_capturar:hover {
   background-color: #E6BBE2;
 }
 
-.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_capturar: hover span {
+.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_capturar:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -820,11 +825,11 @@ top: 68px;
   display: none;
 }
 
-.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_camara: hover {
+.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_camara:hover {
   background-color: #E6BBE2;
 }
 
-.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_camara: hover span {
+.day .container_capturar .container_btn_capturar .btn_container_capt2 .btn_camara:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -946,11 +951,11 @@ top: 68px;
   bottom: 28px;
 }
 
-.day .container_btn_repetir .btn_repetir: hover {
+.day .container_btn_repetir .btn_repetir:hover {
   background: #F0E5EE;
 }
 
-.day .container_btn_repetir .btn_repetir: hover span {
+.day .container_btn_repetir .btn_repetir:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -973,11 +978,11 @@ top: 68px;
   bottom: 64px;
 }
 
-.day .container_btn_repetir .btn_subir: hover {
+.day .container_btn_repetir .btn_subir:hover {
   background-color: #E6BBE2;
 }
 
-.day .container_btn_repetir .btn_subir: hover span {
+.day .container_btn_repetir .btn_subir:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -1187,11 +1192,11 @@ top: 68px;
   color: #110038;
 }
 
-.day .container_subiendo #btn_cancelar2: hover {
+.day .container_subiendo #btn_cancelar2:hover {
   background: #F0E5EE;
 }
 
-.day .container_subiendo #btn_cancelar2: hover span {
+.day .container_subiendo #btn_cancelar2:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -1247,11 +1252,11 @@ top: 68px;
   display: none;
 }
 
-.day #gifoCreado .btn_copiar: hover {
+.day #gifoCreado .btn_copiar:hover {
   background: #F0E5EE;
 }
 
-.day #gifoCreado .btn_copiar: hover span {
+.day #gifoCreado .btn_copiar:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -1280,11 +1285,11 @@ top: 68px;
   color: #110038;
 }
 
-.day #gifoCreado .btn_descargar: hover {
+.day #gifoCreado .btn_descargar:hover {
   background: #F0E5EE;
 }
 
-.day #gifoCreado .btn_descargar: hover span {
+.day #gifoCreado .btn_descargar:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;
@@ -1309,11 +1314,11 @@ top: 68px;
   display: none;
 }
 
-.day .btn_listo2: hover {
+.day .btn_listo2:hover {
   background-color: #E6BBE2;
 }
 
-.day .btn_listo2: hover span {
+.day .btn_listo2:hover span {
   border: 1px dotted #110038;
   width: 100%;
   height: 100%;

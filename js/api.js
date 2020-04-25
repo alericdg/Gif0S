@@ -19,7 +19,7 @@ function setSrcGif(imgid, gifid) {
 }
 
 function gifRandom(tag, imgid){
-  fetch('http://api.giphy.com/v1/gifs/random?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&tag=' + tag)
+  fetch('https://api.giphy.com/v1/gifs/random?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&tag=' + tag)
   .then((response) => {
       return response.json()
   }).then((json) => {

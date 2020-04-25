@@ -103,8 +103,9 @@
     cursor: pointer;
   }
 
-  .dark .desplegable .menu-desplegable li:hover {
-    background: #2E32FB;
+  .dark .menu-desplegable li:hover {
+    background: #EE3EFE;
+    color: white;
     border: 1px solid rgba(51, 53, 143, 0.2);
     -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
             box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
@@ -134,16 +135,16 @@
     background: linear-gradient(left, #2E32FB 0%, #EE3EFE 100%);
   }
 
-  .dark .container #rectangle-copy {
+  .dark .container #rectangle-search {
     cursor: pointer;
   }
 
-  .dark .container #rectangle-copy a:link, .dark .container #rectangle-copy a:visited, .dark .container #rectangle-copy a:active {
+  .dark .container #rectangle-search a:link, .dark .container #rectangle-search a:visited, .dark .container #rectangle-search a:active {
     text-decoration: none;
     color: #B4B4B4;
   }
 
-  .dark .container #rectangle-copy:hover {
+  .dark .container #rectangle-search:hover {
     color: #FFFFFF;
     background: #EE3EFE;
     border: 1px solid #110038;
@@ -216,38 +217,7 @@
     cursor: pointer;
   }
 
-  .dark .gifs .gif1 .barra, .dark .gifs .gif2 .barra, .dark .gifs .gif3 .barra, .dark .gifs .gif4 .barra {
-    width: 280px;
-    height: 24px;
-    background: -webkit-gradient(linear, left top, right top, from(#2E32FB), to(#EE3EFE));
-    background: linear-gradient(left, #2E32FB 0%, #EE3EFE 100%);
-    margin-left: 4px;
-    margin-top: 3px;
-  }
-
-  .dark .gifs .gif1 .barra p, .dark .gifs .gif2 .barra p, .dark .gifs .gif3 .barra p, .dark .gifs .gif4 .barra p {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding-top: 2px;
-    padding-left: 4px;
-    letter-spacing: 0;
-  }
-
-  .dark .gifs .gif1 .barra p img, .dark .gifs .gif2 .barra p img, .dark .gifs .gif3 .barra p img, .dark .gifs .gif4 .barra p img {
-    position: relative;
-    left: 138px;
-  }
-
-  .dark .gifs .gif1 #containerGif1, .dark .gifs .gif1 #containerGif2, .dark .gifs .gif1 #containerGif3, .dark .gifs .gif1 #containerGif4, .dark .gifs .gif2 #containerGif1, .dark .gifs .gif2 #containerGif2, .dark .gifs .gif2 #containerGif3, .dark .gifs .gif2 #containerGif4, .dark .gifs .gif3 #containerGif1, .dark .gifs .gif3 #containerGif2, .dark .gifs .gif3 #containerGif3, .dark .gifs .gif3 #containerGif4, .dark .gifs .gif4 #containerGif1, .dark .gifs .gif4 #containerGif2, .dark .gifs .gif4 #containerGif3, .dark .gifs .gif4 #containerGif4 {
-    height: 270px;
-    width: 270px;
-    margin-left: 8px;
-    margin-top: 7px;
-  }
-
-  .day .gifs .sugeridos .barra {
+  .dark .gifs .sugeridos .barra {
     height: 24px;
     width: 280px;
     background: -webkit-gradient(linear, left top, right top, from(#2E32FB), to(#EE3EFE));

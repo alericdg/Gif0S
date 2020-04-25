@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const $input_my_guifos = document.querySelector(".input_my_guifos")
-  // $input_my_guifos.style.display = "block";
+  // input_my_guifos.style.display = "block";
   const api_url = 'https://api.giphy.com/v1/gifs'
   const api_key = 'vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv'
   const $container = document.querySelector(".container_my_guifos")

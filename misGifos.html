@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
     <title>gifOs - Awesome gifs</title>
-    <link id="day-style" rel="stylesheet" href="styles/day.css">
-    <link id="night-style" rel="stylesheet" href="/styles/night.css">
+    <link id="day-style" rel="stylesheet" href="./styles/day.css">
+    <link id="night-style" rel="stylesheet" href="./styles/night.css">
 
     <link rel="icon" type="image/png" href="./assets/gifOF_logo.png" />
 
@@ -22,7 +22,7 @@
                     id="cntr">0</span></h1>
         </div>
         <nav class="navbar__container">
-        <a href="index.html"><img src="./assets/arrow.svg" alt="flecha" class="arrow"/>
+            <a href="./index.html"><img src="./assets/arrow.svg" alt="flecha" class="arrow"/></a>
             <div class="navbar__brand-container">
                 <div class="navbar__brand-image"> <img id="logo-light" src="./assets/gifOF_logo.png" alt="logo light">
                 </div>
@@ -30,40 +30,31 @@
                 </div>
             </div>
             <ul class="navbar__menu-container">
-                <li>
-                    <button class="button-new">
-                        <a href="crearGifos.html">Crear Gifos</a>
-                    </button>
-                    <button class="button--elegir" id="elegir">
-                        <span> Elegir Tema</span>
-                    </button>
-                    <button onclick="desplegar()" class="desplegable"><img src="./assets/dropdown.svg"
-                            alt="desplegar"></button>
-
-                    <div id="desplegar">
-                        <ul class="menu-desplegable">
-                            <li id="removeNightTheme" class="day">saylor day</li>
-                            <li id="nightTheme" class="night">saylor night</li>
-                        </ul>
-                    </div>
-
-                    <li  id="mis"><a href="misGifos.html">Mis Gifos</a></li>
+                <li class="button-new"><a href="./crearGifos.html">Crear Gifos</a></li>
+                    
+                <li class="button--elegir" id="elegir"> Elegir Tema</li>
+                
+                <li onclick="desplegar()" class="desplegable"><img src="./assets/dropdown.svg" alt="desplegar"></li>
             </ul>
-          </nav>
+            <ul class="menu-desplegable" id="desplegar">
+              <li id="removeNightTheme" class="day">saylor day</li>
+              <li id="nightTheme" class="night">saylor night</li>      
+            </ul>
+            <a id="mis" href="./misGifos.html">Mis Gifos</a>
+        </nav>
 
-      <section>
-          <span class="rectangle-4" input type="search"> Mis Guifos:</span>
-          <div id="input_my_guifos">
-          <div class="container_my_guifos"></div>
-          </div>
-      </section>
+        <div>
+            <div class="rectangle-4"> Mis Guifos:</div>
+            <div id="input_my_guifos">
+            <div class="container_my_guifos"></div>
+            </div>
+        </div>
     </header>
 
     <script src="./js/theme.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/record.js"></script>
     <script src="./js/MisGifos.js"></script>
-
 
 </body>
 

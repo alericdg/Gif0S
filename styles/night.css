@@ -981,3 +981,8 @@
     margin-right: 110px;
     margin-top: 160px;
   }
+
+  .dark .cuadrado:hover figcaption{
+    background: -webkit-gradient(linear, left top, right top, from(#2E32FB), to(#EE3EFE));
+    background: linear-gradient(left, #2E32FB 0%, #EE3EFE 100%);
+  }

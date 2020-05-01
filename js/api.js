@@ -13,7 +13,6 @@ function apiCallSearch(query, limit, offset){
   });
 }
 
-
 function setSrcGif(imgid, gifid) {
   document.getElementById(imgid).src = 'https://i.giphy.com/media/' + gifid + '/giphy.webp'
 }
@@ -27,11 +26,11 @@ function gifRandom(tag, imgid){
 
   })
 }
-const container = document.getElementById("gifsBusqueda")
+  const container = document.getElementById("gifsBusqueda")
 
   document.querySelector(".vermas1").addEventListener("click", () => {
-    url = `https://api.giphy.com/v1/gifs/search?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&limit=12&q=`
-    url += 'baby';
+    url = `https://?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&limit=12&q=`
+    url += 'random';
     fetch(url)
         .then(response => response.json())
         .then(content => {
@@ -41,6 +40,9 @@ const container = document.getElementById("gifsBusqueda")
             content.data.forEach(gif => {
                 renderGif(gif)
             });
+          
+  document.getElementById('resultado').innerHTML= "baby"
+
 
         })
         .catch(err => {
@@ -48,6 +50,7 @@ const container = document.getElementById("gifsBusqueda")
         });
 
     })
+
     document.querySelector(".vermas2").addEventListener("click", () => {
     url = `https://api.giphy.com/v1/gifs/search?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&limit=12&q=`
     url += 'kitten';
@@ -60,6 +63,7 @@ const container = document.getElementById("gifsBusqueda")
             content.data.forEach(gif => {
                 renderGif(gif)
             });
+            document.getElementById('resultado').innerHTML= "kitten"
 
         })
         .catch(err => {
@@ -79,6 +83,7 @@ const container = document.getElementById("gifsBusqueda")
             content.data.forEach(gif => {
                 renderGif(gif)
             });
+            document.getElementById('resultado').innerHTML= "mood"
 
         })
         .catch(err => {
@@ -98,6 +103,7 @@ const container = document.getElementById("gifsBusqueda")
             content.data.forEach(gif => {
                 renderGif(gif)
             });
+            document.getElementById('resultado').innerHTML= "shocked"
 
         })
         .catch(err => {
@@ -106,18 +112,11 @@ const container = document.getElementById("gifsBusqueda")
 
     })
 
-
-
-
 gifRandom('baby', 'Gif01')
 gifRandom('kitten', 'Gif02')
 gifRandom('mood', 'Gif03')
 gifRandom('shocked', 'Gif04')
 })
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', init)
 function init() {
@@ -135,21 +134,18 @@ function init() {
           renderGif(gif)
       })
 
-
   document.getElementById('rectangle-search').addEventListener('click', ev => {
     ev.preventDefault()
+  
     let url = `http://api.giphy.com/v1/gifs/search?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&limit=12&q=`
     let str = document.getElementById('input').value.trim()
     url = url.concat(str)
-    console.log(url)
     fetch(url)
       .then(response => response.json())
       .catch((error) => {
         return error
       })
       .then(content => {
-        console.log(content.data)
-        console.log('META', content.meta)
 
         content.data.forEach(gif => {
           renderGif(gif)
@@ -160,12 +156,10 @@ function init() {
   })
 
   document.getElementById("gifsBusqueda").innerHTML =''
-
+  document.getElementById('resultado').innerHTML=str
 })
 })
 }
-
-
 
 function renderGif(gif) {
 
@@ -175,11 +169,27 @@ function renderGif(gif) {
   img.setAttribute("width", "270 ")
   img.setAttribute("height", "270")
   img.src = gif.images.downsized.url
-  img.alt = gif.title
   fig.appendChild(img)
   fig.appendChild(fc)
+  let text = document.createTextNode(gif.title)
   let container = document.getElementById("gifsBusqueda")
 
   container.appendChild(fig)
-
+  fc.appendChild(text)
+  fc.classList.add("result-gif")
+  fig.classList.add("cuadrado")
 }
+
+// Get the input field
+var input = document.getElementById("input");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(ev) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("rectangle-search").click();
+  }
+});

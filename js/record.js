@@ -28,9 +28,8 @@ const getId = async(endpoint, imgId) => {
     }
 }
 
+
 document.addEventListener("DOMContentLoaded", async () => {
-
-
 
     const btn_comenzar = document.querySelector(".btn_comenzar")
     const container_crear = document.querySelector(".container_crear")
@@ -109,13 +108,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         img.src = URL.revokeObjectURL(blob)
         captura_gif.style.display = 'block'
         img.style.display = 'none'
-        // recorder = await startRecord(recorder, captura_gif)
+        recorder = await startRecord(recorder, captura_gif)
         btn_listo_container.style.display = 'block'
         btn_listo.style.display = 'block'
         btn_recording.style.display = 'block'
         input_listo.style.display = 'block'
         document.querySelector('.titulosDeMensaje').innerHTML = 'Capturando tu Guifo';
-
     })
 
     btn_subir.addEventListener('click', async () => {
@@ -152,12 +150,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     })
 
-
-
-
     btn_listo2.addEventListener('click', () => {
         container_crear.style.display='none'
-
     })
 
     desc.addEventListener("click", async () => {
@@ -295,7 +289,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const preview = (blob) => {
-        captura_gif.style.display = 'none'
 
         img.src = URL.createObjectURL(blob)
         img.setAttribute("width", "832")
@@ -416,12 +409,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
       window.onload = counter_fn;
 
-
-
-      const myGifs = JSON.parse(localStorage.getItem("myGifs")) || [];
+    const  renderMyGifs = async () => {
+        let container = document.querySelector(".container_my_guifos")
+    const myGifs = JSON.parse(localStorage.getItem("myGifs")) || [];
     localStorage.setItem("myGifs", JSON.stringify(myGifs));
     const gif = await getData(`${api_url}?api_key=${api_key}&ids=${myGifs}`);
     renderMyGifs(gif);
-
-
-})
+}})

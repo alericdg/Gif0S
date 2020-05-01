@@ -2,7 +2,7 @@ const api_key = 'vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv'
 
 document.addEventListener('DOMContentLoaded', () => {
 function apiCallSearch(query, limit, offset){
-  fetch('http://api.giphy.com/v1/gifs/search?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&q=' + query + '&limit=' + limit + '&offset=' + offset)
+  fetch('https://api.giphy.com/v1/gifs/search?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&q=' + query + '&limit=' + limit + '&offset=' + offset)
   .then((response) => {
           return response.json();
       })
@@ -137,7 +137,7 @@ function init() {
   document.getElementById('rectangle-search').addEventListener('click', ev => {
     ev.preventDefault()
   
-    let url = `http://api.giphy.com/v1/gifs/search?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&limit=12&q=`
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=vMCoYeAQt3J5o3NOBYrvuUxTTwn9AGmv&limit=12&q=`
     let str = document.getElementById('input').value.trim()
     url = url.concat(str)
     fetch(url)

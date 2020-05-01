@@ -289,6 +289,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const preview = (blob) => {
+        captura_gif.style.display = 'none'
 
         img.src = URL.createObjectURL(blob)
         img.setAttribute("width", "832")
